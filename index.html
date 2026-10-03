@@ -1,42 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <title>Abreham Agegnehu | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav >
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+    <!-- Navigation -->
+ <!-- Navigation -->
+<nav>
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">Abreham.</a>
+        <button class="theme-button" aria-label="Toggle dark mode">
+    🌙
+</button>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <ul class="nav-menu">
+
+            <li><a href="#home" class="nav-link active">Home</a></li>
+
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+
         </ul>
-    </nav>
-    <h1 id="about">My Portfolio</h1>
-    <p>Welcome to my portfolio!</p>
-    <p>hello i'm abreham</p>
-    <button> contact me</button>
-    <p> my email is agegnehuabreham36@gmail.com</p>
-    <a href="mailto:agegnehuabreham36@gmail.com">Send Email</a>
-    <img src="photo.jpg" alt="My Photo">
-    <h2>About Me</h2>
-    <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
-    <h2 id="skills">my skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-    </ul>
-    <h2 id="contact"> here is my github link</h2>
-    <p>
-        <a href="https://github.com/Gebreab7" target="_blank">My GitHub Profile</a></p>
+
+    </div>
+
+</nav>
 
 
+   <!-- Hero Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text-content">
+
+            <p class="hero-small">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Abreham Agegnehu</h1>
+
+            <h2>Information Systems Student & Web Developer</h2>
+
+            <p class="hero-text">
+                I am passionate about technology, web development,
+                and building useful digital experiences.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="photo.jpg"
+                alt="Abreham Agegnehu"
+            >
+
+        </div>
+
+    </div>
+
+</section>
 
 
+    <!-- About Section -->
+   <section id="about" class="section reveal"></section>
+
+        <div class="container">
+
+            <p class="section-small">GET TO KNOW ME</p>
+
+            <h2>About Me</h2>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I am a second-year Information Systems student
+                        interested in web development, technology, and
+                        solving real-world problems through digital solutions.
+                    </p>
+
+                    <p>
+                        I am currently developing my skills in HTML, CSS,
+                        JavaScript, and other technologies by building
+                        practical projects.
+                    </p>
+
+                    <p>
+                        My goal is to become an Information Systems specialist
+                        and use technology to create useful solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="info-item">
+                        <span>Education</span>
+                        <strong>Information Systems</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Focus</span>
+                        <strong>Web Development</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Learning</span>
+                        <strong>HTML • CSS • JavaScript</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>GitHub</span>
+                        <strong>Gebreab7</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section reveal"></section>
+
+        <div class="container">
+
+            <p class="section-small">WHAT I WORK WITH</p>
+
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>
+                        Building the structure of modern websites.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>
+                        Creating layouts, designs, and responsive interfaces.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>
+                        Adding interaction and functionality to websites.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Git & GitHub</h3>
+                    <p>
+                        Managing and sharing my development projects.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section reveal"></section>
+
+    <div class="container">
+
+        <p class="section-small">MY WORK</p>
+
+        <h2>Projects</h2>
+
+<div class="project-filters">
+
+    <button class="filter-button active" data-filter="all">
+        All
+    </button>
+
+    <button class="filter-button" data-filter="web">
+        Web
+    </button>
+
+    <button class="filter-button" data-filter="information">
+        Information Systems
+    </button>
+
+</div>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card">
+
+                <div class="project-content">
+
+                    <p class="project-number">01</p>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A modern responsive portfolio website built
+                        to showcase my skills, projects, and experience
+                        as an Information Systems student.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-link">
+                            Live Demo →
+                        </a>
+
+                        <a href="https://github.com/Gebreab7"
+                           target="_blank"
+                           class="project-link secondary-link">
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 2 -->
+            <article class="project-card">
+
+                <div class="project-content">
+
+                    <p class="project-number">02</p>
+
+                    <h3>Student Information System</h3>
+
+                    <p>
+                        A practical student-focused project designed
+                        to demonstrate my Information Systems knowledge
+                        and problem-solving skills.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Information Systems</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-link">
+                            Live Demo →
+                        </a>
+
+                        <a href="https://github.com/Gebreab7"
+                           target="_blank"
+                           class="project-link secondary-link">
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+    <section id="contact" class="section contact-section reveal"></section>
+
+    <div class="container">
+
+        <p class="section-small">GET IN TOUCH</p>
+
+        <h2>Contact Me</h2>
+
+        <p class="section-intro">
+            Have a question, project idea, or simply want to connect?
+            Send me a message.
+        </p>
+
+        <div class="contact-grid">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h3>Let's Connect</h3>
+
+                <p>
+                    I am always interested in learning, building projects,
+                    and connecting with people interested in technology.
+                </p>
+
+                <div class="contact-item">
+                    <span>Email</span>
+                    <a href="mailto:agegnehuabreham36@gmail.com">
+                        agegnehuabreham36@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span>GitHub</span>
+                    <a href="https://github.com/Gebreab7"
+                       target="_blank">
+                        github.com/Gebreab7
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                        <p class="input-error" id="name-error"></p>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                        <p class="input-error" id="email-error"></p>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
+                        <p class="input-error" id="message-error"></p>
+                </div>
+
+
+                <button type="submit" class="form-button">
+                    Send Message
+                </button>
+                <p class="form-message"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+<!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Abreham Agegnehu. All rights reserved.
+        </p>
+
+    </footer>
+    
+<script src="script.js"></script>
 
 </body>
+
 </html>
+
+
+
